@@ -1,0 +1,25 @@
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmins="http://www.w3.org/2005/Atom">
+    <title>Tyler Pease's Blog</title>
+    <link href="http://sirtarragon.github.io/blog/atom.xml" rel="self"/>
+    <link href="http://sirtarragon.github.io/blog/"/>
+    <updated>{{ site.time | ate_to_xmlschema }}</updated>
+    <id>http://sirtarragon.github.io/blog/</id>
+    <author>
+      <name>Tyler Pease</name>
+      <email></email>
+    </author>
+
+    {% for post in site.posts %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <link href="http://sirtarragon.github.io{{ post.url }}"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>http://sirtarragon.github.io{{ post.url }}</id>
+        <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+    {% endfor %}
+</feed>
