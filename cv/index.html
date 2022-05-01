@@ -1,16 +1,19 @@
 ---
-layout: simple
+layout: standard
 title: CV
 ---
 <div class="cv">
-    <p align="right"><a href="/files/resume.pdf" title ="Download CV as PDF">Download CV</a></p>
+    <p align="right"><a class="button is-inverted" href="#/files/resume.pdf"
+            title="Download CV as PDF">Download CV</a></p>
     <div itemscope itemtype="http://schema.org/Person">
         <span itemprop="name"><h1><strong>TYLER PEASE</strong></h1></span>
         <span itemprop="jobTitle"><strong>Computer Science Student</strong><br></span>
         <span itemprop="description">
-        Computer Science student continuing to search for new experiences to learn.<br>
-        Always seeking new projects to work on to better understand to further his own education.
-        <br><!--</span>
+            Computer Science student continuing to search for new experiences to
+            learn.<br>
+            Always seeking new projects to work on to better himself and to
+            further his own education.
+            <br><!--</span>
         <span itemprop="affiliation"><strong>Florida State University</strong><br>
             <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 <span itemprop="streetAddress">600 W College Ave</span>
@@ -19,75 +22,92 @@ title: CV
                 <span itemprop="postalCode">32306</span>
             </span>
         </span>-->
+            <br>
+            Phone Number: <span itemprop="telephone">+1 (123) 456-7890<br></span>
+            <span itemprop="email">
+                Email: <a href="mailto:"></a><br>
+            </span>
+        </div>
         <br>
-        Phone Number: <span itemprop="telephone">+1 (123) 456-7890<br></span>
-        <span itemprop="email">
-            Email: <a href="mailto:"></a><br>
-        </span>
+        <!-- WORK EXPERIENCE -->
+        <div class="cv-work-exp">
+            <span><h2><strong>WORK EXPERIENCE</strong></h2></span>
+            <span itemprop="employeeOf" itemscope
+                itemtype="http://schema.org/Organization">
+                <span itemprop="name"><strong>Tallahassee Community College</strong></span>
+                |
+                <span itemprop="position"><strong>Computer Lab Assistant/Support
+                        OPS</strong><br></span>
+                <span itemprop="datePosted">September 2019 - May 2020<br></span>
+                <span itemprop="details"><ul>
+                        <li>Oversaw assigned computer lab at assigned hours for
+                            use by students.</li>
+                        <li>Supported the teachers during their class lab hours
+                            in the Spring semester for Introduction to C++.</li>
+                        <li>Tutored any students needing assistance with C++ or
+                            Java.</li>
+                    </ul><br></span>
+            </span>
+            <span itemprop="employeeOf" itemscope
+                itemtype="http://schema.org/Organization">
+                <span itemprop="name"><strong>Lively Technical College</strong></span>
+                |
+                <span itemprop="position"><strong>IT Assistant/TechCon</strong><br></span>
+                <span itemprop="datePosted">May 2018 - August 2019<br></span>
+                <span itemprop="details"><ul>
+                        <li>Installed and configured new computers.</li>
+                        <li>Worked with Active Directory and the Print
+                            Management Server.</li>
+                        <li>Responded to support requests from end users and
+                            patiently walked individuals through basic
+                            troubleshooting tasks.</li>
+                        <li>Assisted in inventorizing computer assets.</li>
+                        <li>Managed and distributed printer resources.</li>
+                    </ul><br></span>
+            </span>
+        </div>
+        <br>
+        <!-- PROJECTS -->
+        <div class="cv-projects">
+            <span><h2><strong>PROJECTS</strong></h2></span>
+        </div>
+        <br>
+        <!-- DEGREES -->
+        <div class="cv-degrees">
+            <span><h2><strong>EDUCATION</strong></h2></span>
+            <span itemprop="alumniOf" itemscope
+                itemtype="http://schema.org/CollegeOrUniversity">
+                <span itemprop="name"><strong>Florida State University</strong><br></span>
+                <span itemprop="degree">Bachelor of Science, Computer Science<br></span>
+                <span itemprop="dateAttended">August 2020 - Current<br></span>
+                <span itemprop="details"><ul>
+                    </ul><br></span>
+            </span>
+            <span itemprop="alumniOf" itemscope
+                itemtype="http://schema.org/CollegeOrUniversity">
+                <span itemprop="name"><strong>Tallahassee Community College</strong><br></span>
+                <span itemprop="degree">Associate of Arts; Computer Science
+                    Prerequisites<br></span>
+                <span itemprop="dateAttended">August 2017 - May 2020<br></span>
+                <span itemprop="details"><ul>
+                        <li>Dean's List Fall 2017, Spring 2018, Spring 2019,
+                            Spring 2020</li>
+                        <li>President's List Fall 2018</li>
+                        <li>Graduated with 3.66 GPA</li>
+                    </ul><br></span>
+            </span>
+            <span itemprop="alumniOf" itemscope
+                itemtype="http://schema.org/CollegeOrUniversity">
+                <span itemprop="name"><strong>Lawton Chiles High School</strong><br></span>
+                <span itemprop="degree">High School Diploma<br></span>
+                <span itemprop="dateAttended">August 2013 - May 2017<br></span>
+                <span itemprop="details"><ul>
+                        <li>Graduated with 3.69 GPA</li>
+                        <li>Received Florida's Bright Futures Scholarship</li>
+                        <li>Member of Marching Band, 1st chair of Euphonium
+                            section</li>
+                        <li>Dual-Enrolled at FAMU for College English 1 & 2</li>
+                    </ul><br></span>
+            </span>
+        </div>
     </div>
-    <br>
-    <!-- WORK EXPERIENCE -->
-    <div class="cv-work-exp">
-        <span><h2><strong>WORK EXPERIENCE</strong></h2></span>
-        <span itemprop="employeeOf" itemscope itemtype="http://schema.org/Organization">
-            <span itemprop="name"><strong>Tallahassee Community College</strong></span> | 
-            <span itemprop="position"><strong>Computer Lab Assistant/Support OPS</strong><br></span>
-            <span itemprop="datePosted">September 2019 - May 2020<br></span>
-            <span itemprop="details"><ul>
-                <li>Oversaw assigned computer lab at assigned hours for use by students.</li>
-                <li>Supported the teachers during their class lab hours in the Spring semester for Introduction to C++.</li>
-                <li>Tutored any students needing assistance with C++ or Java.</li>
-            </ul><br></span>
-        </span>
-        <span itemprop="employeeOf" itemscope itemtype="http://schema.org/Organization">
-            <span itemprop="name"><strong>Lively Technical College</strong></span> | 
-            <span itemprop="position"><strong>IT Assistant/TechCon</strong><br></span>
-            <span itemprop="datePosted">May 2018 - August 2019<br></span>
-            <span itemprop="details"><ul>
-                <li>Installed and configured new computers.</li>
-                <li>Worked with Active Directory and the Print Management Server.</li>
-                <li>Responded to support requests from end users and patiently walked individuals through basic troubleshooting tasks.</li>
-                <li>Assisted in inventorizing computer assets.</li>
-                <li>Managed and distributed printer resources.</li>
-            </ul><br></span>
-        </span>
-    </div>
-    <br>
-    <!-- PROJECTS -->
-    <div class="cv-projects">
-        <span><h2><strong>PROJECTS</strong></h2></span>
-    </div>
-    <br>
-    <!-- DEGREES -->
-    <div class="cv-degrees">
-        <span><h2><strong>EDUCATION</strong></h2></span>
-        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-            <span itemprop="name"><strong>Florida State University</strong><br></span>
-            <span itemprop="degree">Bachelor of Science, Computer Science<br></span>
-            <span itemprop="dateAttended">August 2020 - Current<br></span>
-            <span itemprop="details"><ul>
-            </ul><br></span>
-        </span>
-        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-            <span itemprop="name"><strong>Tallahassee Community College</strong><br></span>
-            <span itemprop="degree">Associate of Arts; Computer Science Prerequisites<br></span>
-            <span itemprop="dateAttended">August 2017 - May 2020<br></span>
-            <span itemprop="details"><ul>
-                <li>Dean's List Fall 2017, Spring 2018, Spring 2019, Spring 2020</li>
-                <li>President's List Fall 2018</li>
-                <li>Graduated with 3.66 GPA</li>
-            </ul><br></span>
-        </span>
-        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
-            <span itemprop="name"><strong>Lawton Chiles High School</strong><br></span>
-            <span itemprop="degree">High School Diploma<br></span>
-            <span itemprop="dateAttended">August 2013 - May 2017<br></span>
-            <span itemprop="details"><ul>
-                <li>Graduated with 3.69 GPA</li>
-                <li>Received Florida's Bright Futures Scholarship</li>
-                <li>Member of Marching Band, 1st chair of Euphonium section</li>
-                <li>Dual-Enrolled at FAMU for College English 1 & 2</li>
-            </ul><br></span>
-        </span>
-    </div>
-</div>
