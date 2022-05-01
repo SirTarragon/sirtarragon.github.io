@@ -1,0 +1,29 @@
+<section class="hero">
+    <div class="hero-head">
+        <div class="container">
+            <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <span class="navbar-item"><b>Tyler Pease</b></span>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-end">
+                            {% if page.url != '/' %}
+                                <a class="navbar-item is-tab" href="/">Home ›</a>
+                            {% endif %}
+                                <a class="navbar-item is-tab" href="/about">About ›</a>
+                                <a class="navbar-item is-tab" href="#/projects">Projects ›</a>
+                                <a class="navbar-item is-tab" href="/cv">CV ›</a>
+                                <a class="navbar-item is-tab" href="/blog">Blog ›</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</section>

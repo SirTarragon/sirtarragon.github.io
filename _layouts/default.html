@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet"
-		href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-		{% include header.html %}
-	</head>
-	<body class="bg-white min-height-full">
-		{% include navigation.html %}
-		
-		<div class="container" align="left">
-
-      	{{ content }}
-
-		</div><!-- /.container -->
-
-		{% include footer.html %}
+<!doctype html>
+<html lang="en">
+	{% include head.html %}
+	<body>
+		{% include nav.html %}
+		{{ content }}
+		{% include foot.html %}
 	</body>
 </html>
