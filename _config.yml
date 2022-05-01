@@ -6,6 +6,7 @@ style: light
 
 plugins: 
   - jekyll-paginate
+  - jekyll-octicons
   - jekyll-github-metadata
 
 paginate: 5
@@ -17,3 +18,15 @@ exclude:
   - README.md
   - license
   - CNAME
+
+projects:
+  sort_by: pushed
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 9
+  exclude:
+    archived: false
+    forks: true
+    projects:
+    # - repo-name
