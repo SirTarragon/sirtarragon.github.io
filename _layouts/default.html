@@ -4,24 +4,17 @@
 		<!-- link to main stylesheet -->
 		<link rel="stylesheet"
 		href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-		{% include head.html %}
+		{% include header.html %}
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-			
-      		{{ content }}
-			
+	<body class="bg-white min-height-full">
+		{% include navigation.html %}
+		
+		<div class="container" align="left">
+
+      	{{ content }}
+
 		</div><!-- /.container -->
-		<footer>
-			{% include footer.html %}
-		</footer>
+
+		{% include footer.html %}
 	</body>
 </html>
