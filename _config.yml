@@ -2,8 +2,6 @@ title: Tyler Pease
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
-style: light
-
 plugins: 
   - jekyll-paginate
   - jekyll-octicons
