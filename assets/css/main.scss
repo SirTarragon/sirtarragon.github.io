@@ -74,8 +74,12 @@ body {
 // Make the navbar narrower
 @media screen and (min-width: 1088px) {
 	.navbar {
-		margin-left: 10vw;
-		margin-right: 10vw;
+    		display:flex;
+    		justify-content: stretch;
+    		align-items: stretch;
+//		margin-left: 10vw;  // prevents form going all the way
+//		margin-right: 10vw;
+		flex-direction: row;
 	}
 }
 
