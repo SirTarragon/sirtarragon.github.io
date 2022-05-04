@@ -4,18 +4,46 @@ title: My Blog
 ---
 
 <section class="hero is-fullheight is-default">
+  <div class="hero-head" style="margin-top:2.5vw;">
+    <div class="container">
+      <div class="columns is-vcentered is-centered">
+	<div class="column is-half is-narrow content">
+	  <h1><b>{{ page.title }}</b></h1>
+	  <p> This is my blog, I'll write in here what I'm currently working on <br>
+	  or whatever I might find interesting in the moment. It may cover all sorts of things,<br>
+          like relevancy to programming or simply something entirely random. All of it may not align<br>
+          with my personal interests, but evidently it aligns in some desire to write about it.</p>
+	</div>
+      </div>
+  </div>
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered is-centered">
         <div class="column is-half is-narrow content">
-          <h1>{{ page.title }}</h1>
           <ul class="posts">
-            {% for post in site.posts %}
+            {% for post in paginator.posts %}
             <li style="list-style:none;"><span>{{ post.date | date_to_string}}</span>
               » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             </li>
             {% endfor %}
           </ul>
+	  <div class="pagination">
+  	    {% if paginator.previous_page %}
+    		<a href="{{ paginator.previous_page_path }}" 
+		   class="previous button">&laquo; Previous</a>
+            {% else %}
+		<span class="previous">Previous</span>
+  	    {% endif %}
+ 	    <span class="page_number ">
+    	    	Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  	    </span>
+  	    {% if paginator.next_page %}
+    		<a href="{{ paginator.next_page_path }}" 
+		   class="next button">Next &raquo;</a>
+	    {% else %}
+		<span class="next ">Next</span>
+  	    {% endif %}
+	  </div>
         </div>
       </div>
     </div>
