@@ -1,0 +1,1 @@
+🎓&nbsp;Bachelors of Science, BS - Computer Science; Florida State University (graduating December 2022)

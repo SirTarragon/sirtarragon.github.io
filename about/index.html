@@ -9,10 +9,13 @@ title: About Me
     </div>
     <div class="column">
         <h1>{{ page.title }}</h1>
+        <br>
+        {% capture edu %}{% include_relative edu.md %}{% endcapture %}
+        {{ edu | markdownify }}
     </div>
 </div>
 <div>
-{% capture bio %}{% include_relative bio.md %}{% endcapture %}
+{% capture bio %}{% include_relative bioblurb.md %}{% endcapture %}
 {{ bio | markdownify }}
 <br>
 {% capture interests %}{% include_relative interests.md %}{% endcapture %}
