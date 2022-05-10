@@ -2,28 +2,33 @@
 layout: default
 title: Home
 ---
-<section class="hero is-fullheight is-default">
+<section class="hero is-fullheight video">
+<!--
+	<video autoplay class="hero-video" poster="/assets/bg.jpg" id="bgvid" playsinline muted loop
+		style="min-width:178vh;min-height:100vh;">
+		<source src="/assets/bgvid.webm" type="video/webm" />
+		<source src="/assets/bgvid.mp4" type="video/mp4" />
+	</video>
+-->
 	<div class="hero-body">
-		<div id="info-container" class="container has-text-centered">
-			<div class="columns is-vcentered">
-				<div class="column is-two-thirds is-centered has-nice-link">
-					<div itemscope itemtype="https://schema.org/Person">
-						<img id="profile-pic" src="assets/images/profile-pic.jpg" width="160"
-							alt="{{ site.author }}" height="160" itemprop="image">
-						<h1 class="title is-2" itemprop="name">{{ site.author }}</h1>
-						<h2 class="subtitle is-4" itemprop="description">
-							Computer Science, Bachelors of Science at FSU
-						</h2>
-						<p>I spend a lot of time studying for my education and taking time off to
-							relax.</p>
-					</div>
-					<br>
+		<div id="info-container" class="container has-text-centered" style="background-color: transparent;">
+			<div class="is-vcentered is-two-thirds is-centered has-nice-link"
+				style="border-radius: 8px;">
+				<div itemscope itemtype="https://schema.org/Person">
+					<img id="profile-pic" src="assets/images/profile-pic.jpg" width="160"
+						alt="{{ site.author }}" height="160" itemprop="image">
+					<h1 class="title is-2" itemprop="name">{{ site.author }}</h1>
+					<h2 class="subtitle is-4" itemprop="description">
+						Computer Science, Bachelors of Science at FSU
+					</h2>
+					<p>I spend a lot of time studying for my education and taking time off to
+						relax.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="hero is-halfheight is-default">
+<section class="hero is-fullheight is-default">
 	<div class="hero-body">
 		<div class="container">
 			<div class="columns is-centered is-vcentered">
