@@ -276,6 +276,14 @@ code.highlighter-rouge {
 	word-break: break-all;
 }
 
+@media screen and (max-width: 769px) {
+	.reverse-columns-order {
+		display: flex !important;
+		flex-direction: column-reverse !important;
+	}
+	.column{width:100% !important;}
+}
+
 @media screen and (max-width: 500px) {
 	.is-hidden-small-screen {
 		display: none !important;
