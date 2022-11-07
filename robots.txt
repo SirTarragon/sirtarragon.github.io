@@ -1,0 +1,4 @@
+User-agent: *
+
+Disallow: /*/_includes/disqus
+Disallow: /*/_includes/foot
