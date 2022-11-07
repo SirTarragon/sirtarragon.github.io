@@ -2,37 +2,6 @@
 layout: standard
 title: CV
 ---
-<span class="is-pulled-right"><a class="button is-primary is-outlined" href="#/files/resume.pdf"
+<span class="is-pulled-right"><a class="button is-primary is-outlined" href="main.html"
         title="Download CV as PDF">Download CV</a></span>
-<div itemscope itemtype="http://schema.org/Person">
-    <span itemprop="name">
-        <h1><strong>TYLER PEASE</strong></h1>
-    </span>
-    <span itemprop="jobTitle"><strong>Computer Science Student</strong><br></span>
-    <span itemprop="description">
-        Computer Science student continuing to search for new experiences to
-        learn.<br>
-        Always seeking new projects to work on to better himself and to
-        further his own education.
-        <br>
-        <br>
-        Phone Number: <span itemprop="telephone">+1 (123) 456-7890<br></span>
-        <span itemprop="email">
-            Email: <a href="mailto:tyler@peasetek.dev">tyler@peasetek.dev</a><br>
-        </span>
-</div>
-<hr>
-<br>
-<div class="columns is-centered is-text-centered reverse-columns-order">
-    <!-- 
-        Columns are hidden based on it being a mobile device.
-        Trying to format the CV to have it display the contents
-        of the columns in a specific way.  
-    -->
-    <div class="column is-half is-narrow content">
-        {% include_relative education.html %}
-    </div>
-    <div class="column is-half is-narrow content">
-        {% include_relative experience.html %}
-    </div>
-</div>
+{% include_relative main.html %}
