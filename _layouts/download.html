@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    {% include head.html %}
+    <style>
+        @media print {
+            @page {
+              size: Letter portrait;
+              margin: 0.5cm;
+            }
+      
+            /* in case @page {margin: 5cm 0 5cm 0;} doesn't work */
+            body {
+              padding-top: 1rem !important;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                page-break-after: avoid;
+            }
+            .m-0,
+            .m-0 *,
+            .dont-print,
+            .dont-print * {
+                display: none!important;
+            }
+            section.resume-section {
+                margin-top: -10rem!important;
+                padding-top: 0rem!important;
+                padding-bottom: 0rem!important;
+                page-break-after: avoid;
+            }
+        }
+    </style>
+    <body class="no-dark-mode" onload="window.print()">
+        {{ content }}
+    </body>
+</html> 
