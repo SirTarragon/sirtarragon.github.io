@@ -1,0 +1,23 @@
+name: sitemap-generation
+run-name: generating sitemap
+on: [push]
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    steps:
+        - name: examine the repo
+          uses: actions/checkout@v2
+          with:
+              fetch-depth: 0
+              
+        - name: generate sitemap
+          uses: cicirello/generate-sitemap@v1.9.0
+          with:
+              base-url-path: https://sirtarragon.github.io/
+              drop-html-extension: true
+          
+        - name: output stats
+          run: |
+              echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+              echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+              echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
