@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /_includes
+Disallow: /_layouts
+Disallow: /cv/experience
+Disallow: /cv/education
+Disallow: /cv/main
