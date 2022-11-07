@@ -1,4 +1,7 @@
 User-agent: *
 
-Disallow: /*/_includes/disqus
-Disallow: /*/_includes/foot
+Disallow: /_includes
+Disallow: /_layouts
+Disallow: /cv/experience
+Disallow: /cv/education
+Disallow: /cv/main
