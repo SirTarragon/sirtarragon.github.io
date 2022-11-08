@@ -5,17 +5,24 @@ title: My Projects
 
 <h1><strong>{{ page.title }}</strong></h1>
 
-<p>
-<h3><strong>PythonChess - <a href="viewer/pythonchess.html">Link</a></strong></h3>
-<div align="left">
-    <img src="https://img.shields.io/github/repo-size/SirTarragon/PythonChess" alt="Repository Size">
-    <img src="https://img.shields.io/github/languages/top/SirTarragon/PythonChess" alt="Top Language">
-    <img src="https://img.shields.io/github/license/SirTarragon/PythonChess" alt="License type">
+<div class="card">
+    <div class="card-header column">
+        <div>
+        <h3 class="card-header-title is-centered"><strong>PythonChess - <a href="viewer/pythonchess.html">Link</a></strong></h3>
+        </div>
+        <div class="column" align="center">
+            <img src="https://img.shields.io/github/repo-size/SirTarragon/PythonChess" alt="Repository Size">
+            <img src="https://img.shields.io/github/languages/top/SirTarragon/PythonChess" alt="Top Language">
+            <img src="https://img.shields.io/github/license/SirTarragon/PythonChess" alt="License type">
+        </div>
+    </div>
+    <div class="card-content">
+        <div class="card-header-icon">
+        <img src="https://www.peasetek.dev/PythonChess/assets/images/mainmenu.png" width="200" height="200">
+        </div>
+        {% include_relative blurbs/pythonchess.md %}
+    </div>
 </div>
-
-<br>
-{% include_relative blurbs/pythonchess.md %}
-</p>
 <h2><strong>Repositories</strong></h2>
 <p>Latest GitHub repositories that I've built and committed to:</p>
 {% include repos.html %}
