@@ -1,1 +1,1 @@
-**Orcs & Towers** is a tower defense game where the player must defend their base from waves of orcs. The player can build towers to defend their base and expand the map to make the path longer for the orcs. The player can also upgrade their towers to make them more powerful.
+Orcs & Towers is a tower defense game where the player must defend their base from waves of orcs. The player can build towers to defend their base and expand the map to make the path longer for the orcs. The player can also upgrade their towers to make them more powerful.
