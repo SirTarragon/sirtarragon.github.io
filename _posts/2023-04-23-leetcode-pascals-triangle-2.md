@@ -3,11 +3,10 @@ layout: post
 title: "Leetcode Pascal's Triangle II"
 date: 2023-04-23
 ---
-# [Leetcode Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)
-Solution posted [here](https://leetcode.com/problems/pascals-triangle-ii/post-solution/3448374/)
+
 
 # Approach
-Essentially, the solution is based on the equation found here: https://en.wikipedia.org/wiki/Pascal%27s_triangle#Calculating_a_row_or_diagonal_by_itself
+Essentially, the solution is based on the equation found here: [https://en.wikipedia.org/wiki/Pascal%27s_triangle#Calculating_a_row_or_diagonal_by_itself] (https://en.wikipedia.org/wiki/Pascal%27s_triangle#Calculating_a_row_or_diagonal_by_itself)
 
 If you don't want to bother going to the link, the equation is sort of as follows: 
 
